@@ -1,7 +1,7 @@
 /** xxxx **/
 
 
-	html { 
+html { 
   background: url(../images/background2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,41 +10,58 @@
   z-index: 1;
 }
 
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+.col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 20px;
 }
 
 
+
 header {
 	float: left;
-	margin-left: 30px;
+	margin-left: 40px;
+	width: auto;
 	background-color: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;	
 	text-align: center;
 	padding: 30px;
 	color: 	#ffffff;
 	font-size: 40px;
+	z-index: 200
 }
 
-p {
-padding: 15px;	
-}
+
 
 nav {
-	background-color: #fff;
-	color: #4aaaa5;
-	width: 100%;
+	text-align: right;	
+	background-color: #fff;	
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 20px;
-	text-align: right		
+	font-size: 20px;	
+	color: #4aaaa5;
+    text-decoration: none;			
 }
 
 ul {
     list-style-type: none;
-    margin-right: 40px;
-    padding: 40;
+    margin: 0;
+    padding: 0;    
     overflow: hidden;
+    text-align: right;
 }
 
 li {
@@ -54,8 +71,10 @@ li {
 li a {
     display: block;
     padding: 20px;
-
 }
+
+
+
 
 h1 {
 	clear: both;
@@ -71,41 +90,52 @@ h1 {
 	margin: 20px;
 }
 
-
-article {  
+main {
 	clear: both;
+}
+
+.left {  
+	float: left;
   	width: 40%;
   	height: auto;
   	padding: 20px;
-  	margin-left: 30px;
+  	margin: 40px;
   	background: #fff;
-  	border: 1px solid #eee;
-  	overflow: auto;
+  	border-width:5px;
+	border-color:#dddddd;
+  	
 }
 
 
 h2 {
 	background-color: #fff;
 	color: #4aaaa5;
-	font-size: 20px
+	font-size: 20px;
 	text-align: center;
 }
 
 
 
-section {	
+.right {	
 	float: right;
 	background-color: #fff;
 	color: #4aaaa5;
-	width: auto;
+	width: 300px;
 	height: auto;	
-	margin: 60px;
+	margin: 40px;
 	text-align: center;
-	padding: 10px
+	padding: 10px;
+	border-width:5px;
+	border-color:#dddddd;
 }
 
 footer {
-	clear: both;
+	position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:full;
+    height:20px;   
 	text-align: center;
 	padding: 20px;
 	background-color: #666666;
