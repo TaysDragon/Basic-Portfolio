@@ -1,95 +1,118 @@
-<!-- Contact -->
+<!-- Contact form -->
 <!DOCTYPE html>
-
-
 <!-- Language information -->
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<title>Reach out</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
-	</head>
 
-
+<head>
+    <meta charset="utf-8">
+    <!-- Page Title -->
+    <title>Contact | Sharon.</title>
+    <link rel="shortcut icon" href="airplane.ico" type="icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js">
+    </script>
+    <!-- Reset css should go first or it will override -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- My custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
 <body>
+    <div>
+        <!-- Main header, my name -->
+        <header id="header">
+            <p id="navName">Sharon Oud</p>
+            <!-- Navigation bar -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="left">
+            <form class="form-horizontal" action=" " method="post" id="contact_form">
+                <fieldset>
+                    <!-- Form Name -->
+                    <h1>Contact Me!</h1>
+                    <hr>
+                    <!-- Contact form -->
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Name</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="full_name" id="full_name" placeholder="First and Last Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" id="email" placeholder="E-Mail Address" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Phone #</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" id="phone" placeholder="(512) 512-5122" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text area -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Message</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="comment" id="message" rows="7" placeholder="Message for Sharon"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, I will get back to you shortly.</div>
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-warning" id="send">Send <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+        <!-- /.container -->
+        <!-- Connect links -->
+        <section class="right">
+            <h2>Connect with Me:</h2>
+            <hr>
+            <a href="https://github.com/TaysDragon" target="_blank" alt="Sharon's github page"><img src="assets/images/github.png" width="80px" height="80px"></a>
+            <a href="https://www.linkedin.com/in/sharonoud/" target="_blank" alt="Sharon's LinkedIn page"><img src="assets/images/linkedin.ico" width="85px" height="85px"></a>
+            <a href="http://stackoverflow.com/users/7687939/tay-and-the-dragon" target="_blank" alt="Sharon's stackoverflow page"><img src="assets/images/stackoverflow.ico" width="80px" height="80px"></a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; Copyright 2017 Sharon Oud</p>
+    </footer>
+    <!-- Custom Script -->
+    <script src="assets/js/contact.js" type="text/javascript"></script>
+</body>
 
-<div>
-  
-		<!-- Main header, my name -->
-			<header>
-				Sharon Oud
-			</header>
-
-		<!-- Navigation bar -->
-			<nav>
-				<ul>
-				  <li><a href="index.html">About</a></li>
-				  <li><a href="portfolio.html">Portfolio</a></li>
-				  <li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-
-</div>
-
-<main>
-	<article class="left">
-		<!-- Headline -->
-		<h1>
-			Contact:
-		</h1>
-				
-
-		<hr>
-
-
-<!-- Contact form -->
-	<form
-	  action="mailto:mrh_Sharon@hotmail.com"
-	  method="POST"
-	  enctype="multipart/form-data"
-	  name="EmailForm">
-
-	Your name:<br>
-	<input type="text" size="20" name="VisitorName"><br><br>
-
-	Your email:<br>
-	<input type="text" size="20" name="VisitorEmail"><br><br>
-
-	Message:<br>
-	<textarea name="VisitorComment" rows="4" cols="20">
-	</textarea><br><br>
-
-	<input type="submit" value="Email This Form">
-
-	</form>
-
-
-		</article>
-
-			
-<!-- Connect links -->
-	<section  class="right">		
-		<h2>Connect with Me:</h2>
-
-		<hr>			
-
-		<a href="https://github.com/TaysDragon" target="_blank" alt="Sharon's github page"><img src="assets/images/github.png" width="80px" height="80px"></a>
-			
-		<a href="https://www.linkedin.com/in/sharonoud/" target="_blank" alt="Sharon's LinkedIn page"><img src="assets/images/linkedin.ico" width="85px" height="85px"></a>
-
-		<a href="http://stackoverflow.com/users/7687939/tay-and-the-dragon" target="_blank" alt="Sharon's stackoverflow page"><img src="assets/images/stackoverflow.ico"  width="80px" height="80px"></a>
-
-			
-	</section>
-</main>
-
-
-
-	<!-- Footer -->
-	<footer>
-		&copy; Copyright 2017 Sharon Oud
-	</footer>
-		
-	</body>
+</html>
