@@ -15,6 +15,7 @@ html {
 body {
     background: transparent !important;
     font-size: 20px;
+    padding: 0px;
 }
 
 #header {
@@ -88,21 +89,6 @@ h2 {
     color: #210038;
 }
 
-h3 {
-    font-family: 'Georgia', Times, Times New Roman, serif !important;
-    position: absolute;
-    bottom: 20px;
-    width: 274px;
-    padding: 10px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 25px;
-    color: #210038;
-    text-align: center;
-    background: #4aaaa5;
-    
-}
-
 hr {
     margin: 20px;
     border: 0;
@@ -126,17 +112,56 @@ hr {
     margin-top: 18px;
 }
 
-img.work {
-    float: relative;
+
+/*Portfolio page*/
+
+.work {
+    position: relative;
     width: 274px;
     height: 205px;
     border: 0 none;
-    margin: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+img.work {
+    width: 100%;
+}
+
+.projText {
+    font-family: 'Georgia', Times, Times New Roman, serif !important;
+    position: absolute;
+    width: 254px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #210038;
+    text-align: center;
+    background: #4aaaa5;
+    bottom: 0px;
+}
+
+.leftPort {
+    display: inline-block;
+    width: 675px;
+    height: 100%;
+    margin: 100px;
+    margin-left: 200px;
+    border-width: 5px;
+    border-color: #dddddd;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #210038;
 }
 
 .left {
     display: inline-block;
-    width: 600px;
+    width: 700px;
     height: 100%;
     margin: 100px;
     margin-left: 200px;
@@ -171,13 +196,13 @@ img.work {
     clear: both;
     position: static;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    height: auto !important;
+    height: 60px !important;
     width: 100%;
     text-align: center;
-    padding: 15px !important;
     color: #fff;
     border-top: 4px solid #4aaaa5;
-    line-height: 30px;
+    line-height: 60px;
+    bottom: 0px;
 }
 
 #success_message {
